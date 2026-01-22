@@ -5,21 +5,21 @@
 class CopilotCouncil < Formula
   desc "AI Model Council Pattern CLI - Query multiple AI models and aggregate responses"
   homepage "https://github.com/openjny/copilot-council"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/openjny/copilot-council/releases/download/v0.1.0/copilot-council_0.1.0_darwin_amd64.tar.gz"
-      sha256 "0fca2948b099d9415dfbc11f26df8d17f880196dfeb5b6310bdb4871c779461d"
+      url "https://github.com/openjny/copilot-council/releases/download/v0.1.1/copilot-council_0.1.1_darwin_amd64.tar.gz"
+      sha256 "06f1ca8e4d5a150a2ced81b1f27bcc6b715b0f547bffd1421eb622e9d2d6517c"
 
       def install
         bin.install "copilot-council"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/openjny/copilot-council/releases/download/v0.1.0/copilot-council_0.1.0_darwin_arm64.tar.gz"
-      sha256 "085d2637a4dc55099daa17a0800da8d5e9e21038f1419067e2cb9487e56255af"
+      url "https://github.com/openjny/copilot-council/releases/download/v0.1.1/copilot-council_0.1.1_darwin_arm64.tar.gz"
+      sha256 "41b1cb2f3c789b20c8bbb30be1fdfdb9c6b2bebf5b656a3b88450a22fe9d3c06"
 
       def install
         bin.install "copilot-council"
@@ -29,15 +29,15 @@ class CopilotCouncil < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/openjny/copilot-council/releases/download/v0.1.0/copilot-council_0.1.0_linux_amd64.tar.gz"
-      sha256 "c64ef603122bfdce51c24f166d0588b3239b99efbdd4bc0ca2ba5bd3d72e441e"
+      url "https://github.com/openjny/copilot-council/releases/download/v0.1.1/copilot-council_0.1.1_linux_amd64.tar.gz"
+      sha256 "19526189b8fe98128f94cc09cc571cca69cca7378c3d4eaeacc1b81c4d3fdea0"
       def install
         bin.install "copilot-council"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/openjny/copilot-council/releases/download/v0.1.0/copilot-council_0.1.0_linux_arm64.tar.gz"
-      sha256 "100728d62c035ea986c6dce7fa8a3a7f8a0847b973ca50d64d42bce540486348"
+      url "https://github.com/openjny/copilot-council/releases/download/v0.1.1/copilot-council_0.1.1_linux_arm64.tar.gz"
+      sha256 "99994a44ab4a68f3556979b504dbaaa4304d61ffbf9415ab66ddd8536c6c0898"
       def install
         bin.install "copilot-council"
       end
